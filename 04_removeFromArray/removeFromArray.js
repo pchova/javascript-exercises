@@ -1,12 +1,14 @@
-const removeFromArray = function(array, arg) {
-    const flatArray = array.flat();
+const removeFromArray = function(arr, ...arg) {
+    const array = arr.flat();
     
-    const newArray = flatArray.filter((flatArray) => flatArray !== arg);
+    const result = array.filter((element) => !arg.includes(element));
      
-    return newArray;
+    return result;
 };
 
 // Do not edit below this line
 module.exports = removeFromArray;
+
+
 
 
