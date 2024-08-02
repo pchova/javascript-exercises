@@ -16,7 +16,10 @@ const findTheOldest = function (people) {
   });
 };
 
+
 /* ALTERNATIVE SOLUTION
+
+
 const getAge = function (person) {
   // The nullish coalescing assignment operator
   // only does the assignment if the left side is "nullish" (evaluates to undefined or null)
